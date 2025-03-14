@@ -1,41 +1,23 @@
 <!DOCTYPE html>
 <html lang="en">
-
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Recipe</title>
+    <title>Dashboard</title>
     <link href="./output.css" rel="stylesheet">
-
+    <script src="https://unpkg.com/htmx.org"></script>
 </head>
+<body class="bg-gray-100 min-h-screen flex">
 
-<body>
-    <!-- Sidebar -->
-    <aside class="w-64 bg-gray-800 text-white min-h-screen p-4">
-        <h1 class="text-2xl font-bold mb-4">Dashboard</h1>
-        <nav>
-            <ul>
-                <li class="mb-2">
-                    <a href="#" class="block p-2 hover:bg-gray-700 rounded">🏠 Pizza</a>
-                </li>
-                <li class="mb-2">
-                    <a href="#" class="block p-2 hover:bg-gray-700 rounded">📊 boil egg</a>
-                </li>
-                <li class="mb-2">
-                    <a href="#" class="block p-2 hover:bg-gray-700 rounded">⚙️ anything</a>
-                </li>
-                <!-- <li class="mt-8">
-                    <a href="#" class="block p-2 bg-red-600 hover:bg-red-700 rounded">🚪 Logout</a>
-                </li> -->
-            </ul>
-        </nav>
-    </aside>
+    <!-- Sidebar (Loaded via HTMX) -->
+    <div hx-get="sidebar.html" hx-swap="outerHTML" hx-trigger="load"></div>
 
-    <!-- Main Content -->
-    <main class="flex-1 p-6">
-        <h2 class="text-3xl font-semibold mb-4">Welcome to the Dashboard</h2>
-        <p class="text-gray-600">This is your main content area.</p>
-    </main>
+    <!-- Main Content Area (Dynamic Content) -->
+    <div id="content-area" class="flex-1 p-6"
+         hx-get="home.html" 
+         hx-swap="innerHTML"
+         hx-trigger="load">
+    </div>
+
 </body>
-
 </html>

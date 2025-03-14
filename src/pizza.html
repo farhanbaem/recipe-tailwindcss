@@ -1,62 +1,8 @@
-<!DOCTYPE html>
-<html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Sidebar with Card</title>
-    <link href="./output.css" rel="stylesheet">
-</head>
-<body class="bg-gray-100 min-h-screen flex">
+<h2 class="text-3xl font-semibold mb-4">📊 Pizza Dashboard</h2>
+<p class="text-gray-600">Here’s your project analysis and insights.</p>
 
-    <!-- Sidebar -->
-    <aside class="w-64 bg-gray-800 text-white min-h-screen p-4">
-        <h1 class="text-2xl font-bold mb-4">Dashboard</h1>
-        <nav>
-            <ul>
-                <li class="mb-2">
-                    <a href="#" class="block p-2 hover:bg-gray-700 rounded">🏠 Home</a>
-                </li>
-                <li class="mb-2">
-                    <a href="#" class="block p-2 hover:bg-gray-700 rounded">📊 Analytics</a>
-                </li>
-                <li class="mb-2">
-                    <a href="#" class="block p-2 hover:bg-gray-700 rounded">⚙️ Settings</a>
-                </li>
-                <li class="mt-8">
-                    <a href="#" class="block p-2 bg-red-600 hover:bg-red-700 rounded">🚪 Logout</a>
-                </li>
-            </ul>
-        </nav>
-    </aside>
-
-    <!-- Main Content -->
-    <main class="flex-1 p-6">
-        <h2 class="text-3xl font-semibold mb-4">Welcome to the Dashboard</h2>
-
-        <!-- Card Section -->
-        <div class="bg-white shadow-md rounded-lg p-6">
-            <h3 class="text-xl font-bold mb-2">📋 Project Overview</h3>
-            <p class="text-gray-600 mb-4">
-                Your paddy fertilizer project is progressing well! Here’s the latest update:
-            </p>
-
-            <!-- Card Content -->
-            <div class="grid grid-cols-2 gap-4">
-                <div class="p-4 bg-green-100 text-green-700 rounded-lg">
-                    ✅ Fertilizer Stock: 500 Bags
-                </div>
-                <div class="p-4 bg-blue-100 text-blue-700 rounded-lg">
-                    📅 Next Application: 15 March 2025
-                </div>
-                <div class="p-4 bg-yellow-100 text-yellow-700 rounded-lg">
-                    🚜 Drone Pilots Assigned: 3 Teams
-                </div>
-                <div class="p-4 bg-red-100 text-red-700 rounded-lg">
-                    ⚠️ Pending Lots: 8 Remaining
-                </div>
-            </div>
-        </div>
-    </main>
-
-</body>
-</html>
+<div class="grid grid-cols-3 gap-4 mt-4">
+    <div class="p-4 bg-green-100 text-green-700 rounded-lg">🌾 Total Lots Covered: 120</div>
+    <div class="p-4 bg-blue-100 text-blue-700 rounded-lg">🛠️ Successful Applications: 95%</div>
+    <div class="p-4 bg-red-100 text-red-700 rounded-lg">🚨 Failed Attempts: 5%</div>
+</div>
