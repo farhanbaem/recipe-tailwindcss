@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -7,9 +8,34 @@
     <link href="./output.css" rel="stylesheet">
 
 </head>
+
 <body>
-    <h1 class="text-3xl font-bold underline">
-        Hello world!
-      </h1>
+    <!-- Sidebar -->
+    <aside class="w-64 bg-gray-800 text-white min-h-screen p-4">
+        <h1 class="text-2xl font-bold mb-4">Dashboard</h1>
+        <nav>
+            <ul>
+                <li class="mb-2">
+                    <a href="#" class="block p-2 hover:bg-gray-700 rounded">🏠 Pizza</a>
+                </li>
+                <li class="mb-2">
+                    <a href="#" class="block p-2 hover:bg-gray-700 rounded">📊 boil egg</a>
+                </li>
+                <li class="mb-2">
+                    <a href="#" class="block p-2 hover:bg-gray-700 rounded">⚙️ anything</a>
+                </li>
+                <!-- <li class="mt-8">
+                    <a href="#" class="block p-2 bg-red-600 hover:bg-red-700 rounded">🚪 Logout</a>
+                </li> -->
+            </ul>
+        </nav>
+    </aside>
+
+    <!-- Main Content -->
+    <main class="flex-1 p-6">
+        <h2 class="text-3xl font-semibold mb-4">Welcome to the Dashboard</h2>
+        <p class="text-gray-600">This is your main content area.</p>
+    </main>
 </body>
+
 </html>
